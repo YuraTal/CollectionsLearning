@@ -57,5 +57,27 @@ public class Main {
         System.out.println(artemBio);
         artemBio.remove(1);
         System.out.println(artemBio);
+
+        //LinkedList on practice
+
+        LinkedList<Car> cars = new LinkedList<>();
+        Car ferrari = new Car("Ferrari Spider");
+        Car bugatti = new Car("Veyron");
+        Car mercedes = new Car("Mercedes Benz");
+
+        cars.addAll(Arrays.asList(ferrari, bugatti, mercedes));
+
+        System.out.println(cars);
+
+        cars.addFirst(new Car("Ford dt300"));
+        cars.addLast(new Car("Fiat"));
+
+        System.out.println(cars);
+
+        System.out.println(cars.pollFirst());
+
+        System.out.println(cars);
+
+
     }
 }
