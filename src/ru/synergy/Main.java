@@ -1,13 +1,12 @@
 package ru.synergy;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+
+    //Arrays
 
         Cat [] cats = new Cat[4];
         cats[0] = new  Cat("Томас");
@@ -18,6 +17,8 @@ public class Main {
         //cats[1] = null;
 
         System.out.println(Arrays.toString(cats));
+
+        //ArraysList
 
         ArrayList<Cat> catsList = new ArrayList<>();
         for(Cat cat : cats) {
@@ -42,7 +43,19 @@ public class Main {
        System.out.println(catsList.toString());
        System.out.println(catsList.size());
 
+    //LinkedList
 
+        String str1 = new String("Hello World");
+        String str2 = new String("My name is Artem");
+        String str3 = new String("I love Java");
 
+        LinkedList<String> artemBio = new LinkedList<>();
+        artemBio.add(str1);
+        artemBio.add(str2);
+        artemBio.add(str3);
+
+        System.out.println(artemBio);
+        artemBio.remove(1);
+        System.out.println(artemBio);
     }
 }
